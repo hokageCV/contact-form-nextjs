@@ -19,10 +19,24 @@ async function sendEmail(name, email, message) {
         subject: 'चिट्ठी आई है',
 
         text: `
-        You got a new message from ${name} 
-        \n\n\n Message: ${message}  \n\n\n
-        Email: ${email}\n
-        `,
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                <p style="font-size: 16px; line-height: 1.2;">
+                    You got a new message from 
+                    <span style="font-size: 18px; font-weight: bold;">${name}</span>
+                </p>
+                <br>
+                <h5 style="font-size: 20px; font-weight: bold;">Message:</h5>
+                <p style="font-size: 16px; line-height: 1.4;">${message}</p>
+                <br>
+                <p> 
+                    <span style="font-size: 20px; font-weight: bold;">Email: &nbsp;</span>
+                    <span style="font-size: 16px; line-height: 1.4;">${email}</span>
+                </p>
+                </td>
+            </tr>
+        </table>`,
     };
 
     try {
