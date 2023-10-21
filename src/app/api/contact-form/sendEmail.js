@@ -22,18 +22,12 @@ async function sendEmail(name, email, message) {
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
                 <td>
-                <p style="font-size: 16px; line-height: 1.2;">
-                    You got a new message from 
-                    <span style="font-size: 18px; font-weight: bold;">${name}</span>
-                </p>
+                <p style="font-size: 16px; line-height: 0.6;">You got a new message from &nbsp; <span style="font-size: 18px; font-weight: bold;">${name}</span></p>
                 <br>
-                <h5 style="font-size: 20px; font-weight: bold;">Message:</h5>
-                <p style="font-size: 16px; line-height: 1.4;">${message}</p>
+                <h5 style="font-size: 20px; font-weight: bold; margin: 0px 0px 10px; line-height: 0.6;">Message:</h5>
+                <p style="font-size: 16px; margin: 0px; line-height: 0.6;">${message}</p> 
                 <br>
-                <p> 
-                    <span style="font-size: 20px; font-weight: bold;">Email: &nbsp;</span>
-                    <span style="font-size: 16px; line-height: 1.4;">${email}</span>
-                </p>
+                <p style="line-height: 0.6;"> <span style="font-size: 20px; font-weight: bold; margin: 0px;">Email: &nbsp;</span><span style="font-size: 16px; margin: 0px;">${email}</span>  </p>
                 </td>
             </tr>
         </table>`,
