@@ -1,6 +1,6 @@
 import sendEmail from './sendEmail'
 
-const allowedOrigins = ['https://hokagecv.github.io']
+const allowedOrigins = ['https://hokagecv.github.io', 'https://www.chaitanyavaru.com']
 
 function corsHeaders(origin) {
   return {
